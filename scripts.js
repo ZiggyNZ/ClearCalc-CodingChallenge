@@ -1,5 +1,5 @@
 // Creates a reusable popup in javascript
-function showPopup(btn, message) {
+function showPopup(btn, message, onConfirm, onCancel) {
 	var dialogId = "test";
 
 	// Create root popup object
@@ -17,6 +17,7 @@ function showPopup(btn, message) {
 	confirmButton.addEventListener('click', function(e) {
 		var modal = document.getElementById(dialogId);
 		modal.close();
+		eval(onConfirm);
 	});
 	dialog.appendChild(confirmButton);
 
@@ -26,6 +27,7 @@ function showPopup(btn, message) {
 	cancelButton.addEventListener('click', function(e) {
 		var modal = document.getElementById(dialogId);
 		modal.close();
+		eval(onCancel);
 	});
 	dialog.appendChild(cancelButton);
 
