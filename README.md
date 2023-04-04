@@ -21,20 +21,20 @@ The entire idea revolves around a singlar function which is used to generate a <
 
 ### Requirements
 1. You should only use vanilla javascript and html and css to write the confirmation dialog
-component without using any library.
+component without using any library. :white_check_mark:
 2. The confirmation dialog component should be reusable. In other words, you should be able to
 put multiple buttons on the main page and when you click them you can show the confirmation
 dialog with different messages. There shouldn’t be any conflicts between your component
-instances.
+instances. :white_check_mark:
 3. As a component, the confirmation dialog should be able to accept a message as a parameter
 from the consumer to display in the modal. It also should return the result (e.g. confirmed or not)
-to the consumer after the user clicks the buttons.
+to the consumer after the user clicks the buttons. :white_check_mark:
 4. As a consumer, the main page should be able to get the result of the component and do
 whatever actions accordingly (in this case is to display the according message on the page, but
-in the real world it can be anything like delete a record, update data etc.)
+in the real world it can be anything like delete a record, update data etc.) :white_check_mark:
 5. The component and the consumer should be loose coupled. For example, don’t hard code
-the logic in the confirmation dialog component to change the text of the main page.
+the logic in the confirmation dialog component to change the text of the main page. :white_check_mark:
 6. When the confirmation dialog shows, it should cover the entire main page. All other elements
-on the main page shouldn’t be clickable when the dialog displays.
+on the main page shouldn’t be clickable when the dialog displays. :white_check_mark:
 7. Create a git repo in either Github, Gitlab, Bitbucket etc. Commit & push as you would
-normally.
+normally. :white_check_mark:
