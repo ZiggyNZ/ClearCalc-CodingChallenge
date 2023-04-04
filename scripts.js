@@ -2,6 +2,12 @@
 function showPopup(btn, message, onConfirm, onCancel) {
 	var dialogId = "test";
 
+	var existing = document.getElementById(dialogId);
+	if(existing !== null) {
+		existing.showModal();
+		return;
+	}
+
 	// Create root popup object
 	var dialog = document.createElement('dialog');
 	dialog.setAttribute("id", dialogId);
