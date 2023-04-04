@@ -1,6 +1,6 @@
 // Creates a reusable popup in javascript
-function showPopup(btn, message, onConfirm, onCancel) {
-	var dialogId = "test";
+function createOrShowPopup(btn, message, onConfirm, onCancel) {
+	var dialogId = "popup-"+btn.id;
 
 	var existing = document.getElementById(dialogId);
 	if(existing !== null) {
