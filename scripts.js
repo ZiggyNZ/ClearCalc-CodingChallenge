@@ -2,6 +2,7 @@
 function createOrShowPopup(btn, message, onConfirm, onCancel) {
 	var dialogId = "popup-"+btn.id;
 
+	// check if there is an existing dialog to show instead
 	var existing = document.getElementById(dialogId);
 	if(existing !== null) {
 		existing.showModal();
