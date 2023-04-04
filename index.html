@@ -6,9 +6,10 @@
 	</head>
 	<body>
 		<Button id="alertExample" onclick="createOrShowPopup(this, 'Do you want to see an alert?', 'alert(\'Here you go!\')', 'alert(\'Too bad!\')')">Create Alert</Button>
-		<Button id="hiddenTextExample" onclick="createOrShowPopup(this, 'Would you like to see some hidden text?', 'document.getElementById(\'hiddenText\').removeAttribute(\'hidden\')', 'someDefaultBehaviour()')">Show Text</Button>
+		<Button id="hiddenTextExample" onclick="createOrShowPopup(this, 'Would you like to see some hidden text?', 'document.getElementById(\'hiddenText\').removeAttribute(\'hidden\')', 'defaultFunction()')">Show Text</Button>
 		<div id='hiddenText' hidden>
 			<p>I was hidden text!</p>
+			<Button id="hiddenTextCloseExample" onclick="createOrShowPopup(this, 'Would you like to hide the hidden text?', 'document.getElementById(\'hiddenText\').setAttribute(\'hidden\', \'\')', 'defaultFunction()')">Hide Text</Button>
 		<div>
 	</body>
 </html>

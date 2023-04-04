@@ -41,3 +41,8 @@ function createOrShowPopup(btn, message, onConfirm, onCancel) {
 	btn.parentElement.appendChild(dialog);
 	document.getElementById(dialogId).showModal();
 }
+
+// An example of how some predfined function can be fed into the buttons
+function defaultFunction() {
+	console.log('example text to console');
+}
