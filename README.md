@@ -1,5 +1,5 @@
 # ClearCalc-CodingChallenge
-Hi there! Thank you for taking the time to look at my code, below is some brief documentation.
+Hi there! Thank you for taking the time to look at my code, below is some brief documentation. Loom: https://www.loom.com/share/f08f4dbbfb0148b881f17927d957c7d3
 
 ### How it works:
 The entire idea revolves around a singlar function which is used to generate a <dialog> component and all it's children. How the dialog looks and functions is determined by the input parameters.
