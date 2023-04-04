@@ -7,3 +7,12 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.reusable p {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.reusable button {
+	padding: 5px;
+	margin:  20px 5px;
+}
