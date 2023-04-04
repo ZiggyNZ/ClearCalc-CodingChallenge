@@ -11,12 +11,15 @@ function createOrShowPopup(btn, message, onConfirm, onCancel) {
 	// Create root popup object
 	var dialog = document.createElement('dialog');
 	dialog.setAttribute("id", dialogId);
+	dialog.className = "reusable";
 
 	// Create message
 	var messageBlock = document.createElement('p');
 	messageBlock.innerText = message;
 	dialog.appendChild(messageBlock);
 	
+	var buttonBlock = document.createElement('div');
+
 	// Configure confirmation button
 	var confirmButton = document.createElement('Button');
 	confirmButton.innerText = 'Confirm';
@@ -25,7 +28,7 @@ function createOrShowPopup(btn, message, onConfirm, onCancel) {
 		modal.close();
 		eval(onConfirm);
 	});
-	dialog.appendChild(confirmButton);
+	buttonBlock.appendChild(confirmButton);
 
 	// Configure cancellation button
 	var cancelButton = document.createElement('Button');
@@ -35,7 +38,9 @@ function createOrShowPopup(btn, message, onConfirm, onCancel) {
 		modal.close();
 		eval(onCancel);
 	});
-	dialog.appendChild(cancelButton);
+	buttonBlock.appendChild(cancelButton);
+
+	dialog.appendChild(buttonBlock);
 
 	// Bind popup to object calling this function + show modal
 	btn.parentElement.appendChild(dialog);
